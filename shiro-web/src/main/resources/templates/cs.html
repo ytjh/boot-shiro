@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" 
+	xmlns:shiro="http://www.pollix.at/thymeleaf/shiro"
+	>
+<head>
+<meta charset="UTF-8"/>
+<title>cs</title>
+<meta name="keywords" content="" />
+<meta name="description" content="cs" />
+</head>
+<body>
+进入页面了啊啊啊啊啊啊啊啊啊啊啊啊
+
+<p shiro:hasPermission="cs">zs看到的</p>
+<p shiro:hasPermission="lisi">lisi看到的</p>
+
+  <shiro:hasPermission name="cs">zs能看到的</shiro:hasPermission>
+<shiro:hasPermission name="lisi">lisi能看到的</shiro:hasPermission> 
+</body>
+</html>
